@@ -2,10 +2,10 @@
 """
     Module implementing mypy
 """
-from typing import Tuple, List
+from typing import Tuple, List, Any
 
 
-def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> List[int]:
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """Returns a tuple"""
     zoomed_in: List[int] = [
         item for item in lst
